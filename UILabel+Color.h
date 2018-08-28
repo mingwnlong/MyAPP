@@ -10,4 +10,6 @@
 
 @interface UILabel (Color)
 
+@property (copy, nonatomic) NSString *cloudox;
+
 @end

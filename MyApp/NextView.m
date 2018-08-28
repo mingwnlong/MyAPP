@@ -10,12 +10,31 @@
 
 @implementation NextView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame{
+    
+    self = [super initWithFrame:frame];
+    if (self) {
+     
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.frame = CGRectMake(80, 80, 50, 50);
+        
+        button.backgroundColor = [UIColor groupTableViewBackgroundColor];
+        
+        [button addTarget:self action:@selector(resopn:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:button];
+    }
+    return self;
 }
-*/
+-(void)resopn:(UIButton *)sender
+{
+    //发送事件时：
+    [self routerEventWithName:@"点击了" userInfo:nil];
+    
+        NSLog(@"发送事件");
+    
+    
+}
+
+
 
 @end

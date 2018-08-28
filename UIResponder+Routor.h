@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UIResponder (Routor)
+- (void)routerEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo;
+
 
 @end

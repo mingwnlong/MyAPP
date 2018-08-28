@@ -154,7 +154,7 @@
 /**
  *  把格式化的JSON格式的字符串转换成字典
  *
- *  @param jsonString
+ *  @pragma jsonString
  *
  *  @return jsonString JSON格式的字符串
  */

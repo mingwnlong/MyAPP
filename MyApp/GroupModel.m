@@ -10,4 +10,22 @@
 
 @implementation GroupModel
 
++(NSDictionary *)mj_objectClassInArray{
+ 
+    
+    return @{
+             @"roomgroup":[RoomModel class],
+             };
+    
+    
+}
+
+
+
+
+@end
+
+
+@implementation RoomModel
+
 @end

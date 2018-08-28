@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^cleanCacheBlock)();
+typedef void(^cleanCacheBlock)(void);
 
 @interface JDTools : NSObject
 
@@ -20,7 +20,7 @@ typedef void(^cleanCacheBlock)();
 + (BOOL)isEmpty:(NSString *)string;
 /**
  *  判断字符串是否全是空格
- *  @param string 判断的字符串
+ *  @param str 判断的字符串
  *  @return 判断结果
  */
 + (BOOL)isAllContainEmpty:(NSString *) str;
